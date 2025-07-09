@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/8103c2857b33298a81f6d50422e2786b.css" rel="stylesheet">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/index.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="pagemap active" data-toggletarget="mapobject">
+      <div class="pagemap__nav">
+        <a href="#" data-close="mapobject">
+          <span class="onlydesktop">Закрыть карту</span>
+          <span class="onlymobile">Показать список</span>
+          <!-- <i class="fa icon  s50 fa-close"></i> -->
+        </a>
+      </div><!-- /.pagemap__nav -->
+      <div class="pagemap__body productinfo_v2">
+        <div class="pagemap__sidebar nolist">
+          <div class="pagemap__list_toggler">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z">
+              </path>
+            </svg>
+          </div>
+          <div class="pagemap__content">
+            <div class="pagemap__filter">
+              <div class="bx_filter bx_filter_vertical swipeignore ">
+                <div class="">
+                  <div
+                    class="slide-block__head filter_title  title-menu font-bold colored_theme_hover_bg-block darken font_upper_md"
+                    data-id="FILTER">
+                    <i class="svg  svg-inline-catalog" aria-hidden="true"><svg xmlns="https://www.w3.org/2000/svg"
+                        width="12" height="10" viewBox="0 0 12 10">
+                        <path data-name="Rectangle 636 copy 5" class="cls-1"
+                          d="M574.593,665.783L570,670.4V674l-2-1v-2.6l-4.6-4.614a0.94,0.94,0,0,1-.2-1.354,0.939,0.939,0,0,1,.105-0.16,0.969,0.969,0,0,1,.82-0.269h9.747a0.968,0.968,0,0,1,.82.269,0.94,0.94,0,0,1,.087.132A0.945,0.945,0,0,1,574.593,665.783Zm-8.164.216L569,668.581,571.571,666h-5.142Z"
+                          transform="translate(-563 -664)"></path>
+                      </svg></i> Фильтр <!-- <i class="svg  svg-inline-down colored_theme_hover_bg-el" aria-hidden="true"><svg
+                    xmlns="https://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                    <path data-name="Rounded Rectangle 890 copy 2" class="cls-1"
+                      d="M517.778,610.8a0.721,0.721,0,0,1-1.016,0L514,607.769l-2.79,3.028a0.715,0.715,0,1,1-1.01-1.011l3.273-3.552c0.009-.009.012-0.021,0.021-0.03a0.723,0.723,0,0,1,1.017,0,0.022,0.022,0,0,1,0,0l3.265,3.577A0.712,0.712,0,0,1,517.778,610.8Z"
+                      transform="translate(-510 -606)" />
+                  </svg></i> <i class="svg  svg-inline-icon svg-close close-icons" aria-hidden="true"><svg
+                    xmlns="https://www.w3.org/2000/svg" width="12.031" height="12" viewBox="0 0 12.031 12">
+                    <path data-name="Rounded Rectangle 906 copy 2" class="cls-1"
+                      d="M289.414,36.986l4.307,4.307a1,1,0,0,1-1.414,1.414L288,38.4l-4.307,4.307a1,1,0,0,1-1.415-1.414l4.308-4.307-4.294-4.294a1,1,0,0,1,1.414-1.414L288,35.572l4.294-4.294a1,1,0,0,1,1.414,1.414Z"
+                      transform="translate(-282 -31)" />
+                  </svg></i> -->
+                  </div>
+                  <div class="slide-block__body">
+                    <div data-v-7c2b7dcd="" class="search-widget">
+                      <div data-v-7c2b7dcd="" class="search-widget-field tmp-font--average">
+                        <div data-v-2b019af9="" data-v-7c2b7dcd=""
+                          class="suggest-wrapper search-widget-field--suggestions">
+                          <div data-v-2b019af9="" class="input-wrapper">
+                            <label data-v-2b019af9="" class="suggest-label tmp-font--average"
+                              for="suggest">Поиск</label>
+                          </div>
+                          <!--v-if-->
+                        </div>
+                        <div>
+                          <input type="hidden" id="datein" value="">
+                          <input type="hidden" id="dateout" value="">
+                          <input type="hidden" name="disdates" value="">
+
+                          <div id="app" data-v-app="">
+                            <div class="box">
+                              <section>
+                                <div class="tooltip" style="top: -100px; left: -100px;">1 сутки</div>
+                                <div class="dpicker__wrapper">
+                                  <div class="search_datepicker">
+                                    <div data-cy="checkIn" class="search-widget-field--occupied__in">
+                                      <div class="title">Заезд</div>
+                                      <div class="date">Когда</div>
+                                    </div>
+                                    <div data-cy="checkOut" class="search-widget-field--occupied__out">
+                                      <div class="title">Отъезд</div>
+                                      <div class="date">Когда</div>
+                                    </div>
+                                  </div>
+                                  <div class="mx-datepicker mx-datepicker-range">
+                                    <div class="mx-input-wrapper"><input name="date" type="text" autocomplete="off"
+                                        class="mx-input" placeholder="Select date range"><!----><i
+                                        class="mx-icon-calendar"><svg xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 1024 1024" width="1em" height="1em">
+                                          <path
+                                            d="M940.218 107.055H730.764v-60.51H665.6v60.51H363.055v-60.51H297.89v60.51H83.78c-18.617 0-32.581 13.963-32.581 32.581v805.237c0 18.618 13.964 32.582 32.582 32.582h861.09c18.619 0 32.583-13.964 32.583-32.582V139.636c-4.655-18.618-18.619-32.581-37.237-32.581zm-642.327 65.163v60.51h65.164v-60.51h307.2v60.51h65.163v-60.51h176.873v204.8H116.364v-204.8H297.89zM116.364 912.291V442.18H912.29v470.11H116.364z">
+                                          </path>
+                                        </svg></i></div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  <div data-v-7c2b7dcd="" class="search-widget-field--occupied" style="z-index: 1;">
+        <div data-v-7c2b7dcd="" data-cy="checkIn" class="search-widget-field--occupied__in">
+          <div data-v-7c2b7dcd="" class="title">Заезд</div>
+          <div data-v-7c2b7dcd="" class="date">Когда</div>
+        </div>
+        <div data-v-7c2b7dcd="" data-cy="checkOut" class="search-widget-field--occupied__out">
+          <div data-v-7c2b7dcd="" class="title">Отъезд</div>
+          <div data-v-7c2b7dcd="" class="date">Когда</div>
+        </div>
+        <div data-v-7c2b7dcd="" class="calendar-in"></div>
+      </div> -->
+                        <div data-v-7c2b7dcd="" class="search-widget-field__right">
+                          <div data-v-a96f417a="" data-v-7c2b7dcd="" class="select-guests search-widget-field--guest">
+                            <button data-v-a96f417a="" class="select-guests--btn"
+                              data-toggleclick="select-guests__main">
+                              <div data-v-a96f417a="" class="title">Гости</div>
+                              <div data-v-a96f417a="">2 взрослых, <span data-v-a96f417a=""> без детей</span>
+                              </div>
+                            </button>
+                            <!---->
+                          </div>
+                          <div data-v-a96f417a="" class="select-guests__main tmp-font--medium" id="sel"
+                            data-toggleblock="select-guests__main">
+                            <div data-v-a96f417a="" class="select-guests__main-wrapper">
+                              <div data-v-7f537561="" data-v-9af400c4="" class="guests-counter adults"
+                                data-quantity="adults">
+                                <div data-v-7f537561="" class="guests-counter__text"><strong
+                                    data-v-7f537561="">Взрослые</strong><span data-v-7f537561="">от 18 лет</span></div>
+                                <div data-v-7f537561="" class="guests-counter__editing">
+                                  <button data-v-4e32f22f="" data-v-7f537561=""
+                                    class="ui-button pale-blue guests-counter__button" data-quantitybtn="minus"><span
+                                      data-v-7f537561="" class="icon-app-minus"></span></button>
+                                  <span data-v-7f537561="" class="guests-counter__value"
+                                    data-quantitytext="adults">2</span>
+                                  <input type="hidden" value="2" id="adults" data-quantityvalue="adults">
+                                  <button data-v-4e32f22f="" data-v-7f537561=""
+                                    class="ui-button pale-blue guests-counter__button" data-quantitybtn="plus"><span
+                                      data-v-7f537561="" class="icon-app-plus"></span></button>
+                                </div>
+                                <!---->
+                              </div>
+                              <hr data-v-9af400c4="">
+                              <div data-v-d1e9d8f0="" class="select-guests__add-child add-child" data-quantity="child">
+                                <div data-v-d1e9d8f0="" class="add-child__text"><strong
+                                    data-v-d1e9d8f0="">Дети</strong><span data-v-d1e9d8f0="" class="" data-hint="">от 0
+                                    до 17 лет</span></div>
+                                <div data-v-d1e9d8f0="" class="add-child__editing">
+                                  <button data-v-4e32f22f="" data-v-d1e9d8f0=""
+                                    class="ui-button pale-blue add-child__button" data-quantitybtn="minus"><span
+                                      data-v-d1e9d8f0="" class="icon-app-minus"></span></button>
+                                  <span data-v-d1e9d8f0="" class="add-child__value quantity-field" step="1"
+                                    data-quantitytext="child">0</span>
+                                  <input type="hidden" id="child" value="0" data-quantityvalue="child">
+                                  <button data-v-4e32f22f="" data-v-d1e9d8f0=""
+                                    class="ui-button pale-blue add-child__button" data-quantitybtn="plus"><span
+                                      data-v-d1e9d8f0="" class="icon-app-plus"></span></button>
+                                </div>
+                              </div>
+                              <hr data-v-9af400c4="">
+                              <div data-v-9af400c4="" class="select-guests__pets pets">
+                                <span data-v-9af400c4="" class="pets-text">С питомцами</span>
+                                <label for="04df336f9f8a"></label>
+                                <!--  <div data-v-1ef93adc="" data-v-9af400c4="" class="ui-switcher">
+                <input data-v-1ef93adc="" type="checkbox">
+                <div data-v-1ef93adc="" class="ui-switcher__dot"></div>
+              </div> -->
+                                <div data-v-39d6843f="" class="sc-switcher">
+                                  <div class="sc-switcher-body">
+                                    <div data-v-39d6843f="" class="best-sting">
+                                      <div data-v-39d6843f="" class="icon-wrap"></div>
+                                    </div>
+                                  </div>
+                                  <input id="23304df336f9f8a" type="checkbox" value="0"><label
+                                    for="23304df336f9f8a"></label>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-v-a96f417a="" class="button-wrapper"><button data-v-4e32f22f="" data-v-a96f417a=""
+                                class="ui-button dark" data-toggleclick="select-guests__main">Готово</button></div>
+                          </div>
+                          <button data-v-4e32f22f="" data-v-7c2b7dcd="" class="ui-button red btn-search-main disabled"
+                            data-cy="search">
+                            <span data-v-7c2b7dcd="" class="">Найти</span>
+                            <!-- <div data-v-7c2b7dcd="" class="search-icon onlydesktop"><img data-v-7c2b7dcd=""
+                  src="/img/icon_navigation_search.1591151f.svg" /></div> -->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bx_filter_section  rounded3">
+                      <div class="pagemap__list">
+
+                        <div
+                          class="catalog_block catalog_block_v2 items row  margin0 has-bottom-nav js_append ajax_load block flexbox">
+                          <div
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12 item item-parent catalog-block-view__item js-notice-block item_block custom-line "
+                            data-id="123017" data-product_type="1">
+                            <div class="basket_props_block" id="bx_basket_div_123017_block" style="display: none;">
+                            </div>
+                            <div
+                              class="catalog_item_wrapp catalog_item item_wrap main_item_wrapper  product_image catalog_item_v2"
+                              id="bx_3966226736_123017">
+                              <div class="inner_wrap TYPE_1">
+
+                                <div class="image_wrapper_block js-notice-block__image ">
+                                  <div class="sale_block">
+                                    <div class="sale_wrapper font_xxs">
+                                      <div class="sale-number rounded2">
+                                        <div class="value">-<span>5</span>%</div>
+                                        <div class="inner-sale rounded1">
+                                          <div class="text">Экономия <span class="values_wrapper"><span
+                                                class="price_value">245</span><span class="price_currency">
+                                                ₽</span></span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <a href="/catalog/okhta-park/123017/"
+                                    onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                    class=" ">
+                                    <div class="hover-slider-images-toggler"
+                                      style="position: absolute; inset: 0px; display: flex;">
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                        data-hover-slider-i="1" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp"
+                                        data-hover-slider-i="2" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg"
+                                        data-hover-slider-i="3" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                        data-hover-slider-i="4" style="flex-grow: 1;"></div>
+                                    </div>
+                                    <div class="hover-slider-indicator">
+                                      <div data-hover-slider-i="1" class="hover-slider-indicator-dot active"></div>
+                                      <div data-hover-slider-i="2" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="3" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="4" class="hover-slider-indicator-dot"></div>
+                                    </div>
+                                    <img src="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                      data-hover-slides="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp, img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg, img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                      data-options="{&quot;touch&quot;: &quot;end&quot; }"
+                                      alt="Ohtaparkinn Village с видом на шале"
+                                      title="Ohtaparkinn Village с видом на шале" class="hover-slider-init">
+                                  </a>
+                                </div>
+                                <div class="item_info se">
+                                  <div class="item_info--top_block">
+
+
+                                    <div class="item-title">
+                                      <a href="/catalog/okhta-park/123017/"
+                                        onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                        class="dark_link js-notice-block__title option-font-bold font_sm"><span>Ohtaparkinn
+                                          Village с
+                                          видом на
+                                          шале</span></a>
+                                    </div>
+
+                                    <div class="cardv2_footer">
+                                      <div class="pricesv2">
+                                        <ul class="pricesv2__list">
+                                          <li class="pricesv2_forndays">
+                                            <span>За N суток</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                          <li>
+                                            <span>Предоплата</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                        </ul>
+                                      </div><!-- /.pricesv2 -->
+                                      <div class="cardbuttonv2">
+                                        <a href="/catalog/okhta-park/123017/"
+                                          class="btn btn-default has-ripple">Выбрать</a>
+                                      </div><!-- /.cardbuttonv2 -->
+                                    </div><!-- /.cardv2_footer -->
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12 item item-parent catalog-block-view__item js-notice-block item_block custom-line "
+                            data-id="123018" data-product_type="1">
+                            <div class="basket_props_block" id="bx_basket_div_123017_block" style="display: none;">
+                            </div>
+                            <div
+                              class="catalog_item_wrapp catalog_item item_wrap main_item_wrapper  product_image catalog_item_v2"
+                              id="bx_3966226736_123017">
+                              <div class="inner_wrap TYPE_1">
+
+                                <div class="image_wrapper_block js-notice-block__image ">
+                                  <div class="sale_block">
+                                    <div class="sale_wrapper font_xxs">
+                                      <div class="sale-number rounded2">
+                                        <div class="value">-<span>5</span>%</div>
+                                        <div class="inner-sale rounded1">
+                                          <div class="text">Экономия <span class="values_wrapper"><span
+                                                class="price_value">245</span><span class="price_currency">
+                                                ₽</span></span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <a href="/catalog/okhta-park/123017/"
+                                    onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                    class=" ">
+                                    <div class="hover-slider-images-toggler"
+                                      style="position: absolute; inset: 0px; display: flex;">
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                        data-hover-slider-i="5" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp"
+                                        data-hover-slider-i="6" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg"
+                                        data-hover-slider-i="7" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                        data-hover-slider-i="8" style="flex-grow: 1;"></div>
+                                    </div>
+                                    <div class="hover-slider-indicator">
+                                      <div data-hover-slider-i="5" class="hover-slider-indicator-dot active"></div>
+                                      <div data-hover-slider-i="6" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="7" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="8" class="hover-slider-indicator-dot"></div>
+                                    </div>
+                                    <img src="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                      data-hover-slides="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp, img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg, img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                      data-options="{&quot;touch&quot;: &quot;end&quot; }"
+                                      alt="Ohtaparkinn Village с видом на шале"
+                                      title="Ohtaparkinn Village с видом на шале" class="hover-slider-init">
+                                  </a>
+                                </div>
+                                <div class="item_info se">
+                                  <div class="item_info--top_block">
+
+
+                                    <div class="item-title">
+                                      <a href="/catalog/okhta-park/123017/"
+                                        onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                        class="dark_link js-notice-block__title option-font-bold font_sm"><span>Ohtaparkinn
+                                          Village с
+                                          видом на
+                                          шале</span></a>
+                                    </div>
+
+                                    <div class="cardv2_footer">
+                                      <div class="pricesv2">
+                                        <ul class="pricesv2__list">
+                                          <li class="pricesv2_forndays">
+                                            <span>За N суток</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                          <li>
+                                            <span>Предоплата</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                        </ul>
+                                      </div><!-- /.pricesv2 -->
+                                      <div class="cardbuttonv2">
+                                        <a href="/catalog/okhta-park/123017/"
+                                          class="btn btn-default has-ripple">Выбрать</a>
+                                      </div><!-- /.cardbuttonv2 -->
+                                    </div><!-- /.cardv2_footer -->
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xxs-12 item item-parent catalog-block-view__item js-notice-block item_block custom-line "
+                            data-id="123019" data-product_type="1">
+                            <div class="basket_props_block" id="bx_basket_div_123017_block" style="display: none;">
+                            </div>
+                            <div
+                              class="catalog_item_wrapp catalog_item item_wrap main_item_wrapper  product_image catalog_item_v2"
+                              id="bx_3966226736_123017">
+                              <div class="inner_wrap TYPE_1">
+
+                                <div class="image_wrapper_block js-notice-block__image ">
+                                  <div class="sale_block">
+                                    <div class="sale_wrapper font_xxs">
+                                      <div class="sale-number rounded2">
+                                        <div class="value">-<span>5</span>%</div>
+                                        <div class="inner-sale rounded1">
+                                          <div class="text">Экономия <span class="values_wrapper"><span
+                                                class="price_value">245</span><span class="price_currency">
+                                                ₽</span></span></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <a href="/catalog/okhta-park/123017/"
+                                    onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                    class=" ">
+                                    <div class="hover-slider-images-toggler"
+                                      style="position: absolute; inset: 0px; display: flex;">
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                        data-hover-slider-i="9" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp"
+                                        data-hover-slider-i="10" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg"
+                                        data-hover-slider-i="11" style="flex-grow: 1;"></div>
+                                      <div class="hover-slider-toggle-pane"
+                                        data-hover-slider-image="img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                        data-hover-slider-i="12" style="flex-grow: 1;"></div>
+                                    </div>
+                                    <div class="hover-slider-indicator">
+                                      <div data-hover-slider-i="9" class="hover-slider-indicator-dot active"></div>
+                                      <div data-hover-slider-i="10" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="11" class="hover-slider-indicator-dot"></div>
+                                      <div data-hover-slider-i="12" class="hover-slider-indicator-dot"></div>
+                                    </div>
+                                    <img src="img/c6w3kp60whsa45zwph174z128egl2r1n.webp"
+                                      data-hover-slides="img/o92b3wznn7gmv1ervhr9a21dvsvt7xte.webp, img/jkwauzlnedku9sotk6o1xg2cziiepmwl.jpg, img/z4o6pkdxpqpios0oupmmbet218anq99r.jpg"
+                                      data-options="{&quot;touch&quot;: &quot;end&quot; }"
+                                      alt="Ohtaparkinn Village с видом на шале"
+                                      title="Ohtaparkinn Village с видом на шале" class="hover-slider-init">
+                                  </a>
+                                </div>
+                                <div class="item_info se">
+                                  <div class="item_info--top_block">
+
+
+                                    <div class="item-title">
+                                      <a href="/catalog/okhta-park/123017/"
+                                        onclick="BX.ajax.insertToNode('/catalog/okhta-park/123017/?bxajaxid=d7685f995e172af27f9380a1fc555728', 'comp_d7685f995e172af27f9380a1fc555728'); return false;"
+                                        class="dark_link js-notice-block__title option-font-bold font_sm"><span>Ohtaparkinn
+                                          Village с
+                                          видом на
+                                          шале</span></a>
+                                    </div>
+
+                                    <div class="cardv2_footer">
+                                      <div class="pricesv2">
+                                        <ul class="pricesv2__list">
+                                          <li class="pricesv2_forndays">
+                                            <span>За N суток</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                          <li>
+                                            <span>Предоплата</span>
+                                            <span>11 000 ₽</span>
+                                          </li>
+                                        </ul>
+                                      </div><!-- /.pricesv2 -->
+                                      <div class="cardbuttonv2">
+                                        <a href="/catalog/okhta-park/123017/"
+                                          class="btn btn-default has-ripple">Выбрать</a>
+                                      </div><!-- /.cardbuttonv2 -->
+                                    </div><!-- /.cardv2_footer -->
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.pagemap__list -->
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.pagemap__filter -->
+
+          </div>
+        </div><!-- /.pagemap__sidebar -->
+        <div class="pagemap__map">
+          <div id="shopsmap" >
+
+          </div><!-- /#shopsmap -->
+        </div>
+        <!-- /.pagemap__map -->
+      </div><!-- /.pagemap__body -->
+    </div>
+  </div><!-- /.container -->
+
+  <script
+    src="https://api-maps.yandex.ru/2.1/?apikey=f5155744-5220-4a31-9995-820f8689bb7b&lang=ru_RU&load=package.standard"
+    type="text/javascript"></script>
+
+  <script>
+
+    let placemarks = {};
+    const marks = [
+      {
+        'coords': [
+          '55.700081194264',
+          '37.858514204023'
+        ],
+        'id': "123017",
+        'photo': 'img/jphnhkkcs1y0oj9k7oeq0znvaie6nuvz.jpg',
+        'link': '/catalog/rent/155070/',
+        'title': 'Коттедж Аппалачи с сауной в Коробицыно-Вилладж на -1 этаже 77 м2 ',
+        /* 'reviews': '500 отзывов', */
+        /* 'rating': '4.9', */
+        'placemarkContent': '7 000 ₽',
+
+        /* 'params': [
+          '42 м²',
+          '2 комнаты',
+          '1 спальня',
+          '1 кровать',
+          '2 гостя'
+        ], */
+        'prices': {
+          'За N суток': 11000,
+          'Предоплата': 131000
+        }
+      },
+      {
+        'coords': [
+          '55.930081194264',
+          '37.248514204023'
+        ],
+        'id': "123018",
+        'photo': 'img/jphnhkkcs1y0oj9k7oeq0znvaie6nuvz.jpg',
+        'link': '/catalog/rent/155070/',
+        'title': 'Коттедж Аппалачи с сауной в Коробицыно-Вилладж на -1 этаже 77 м2 ',
+        /*  'reviews': '500 отзывов', */
+        /* 'rating': '4.9', */
+        'placemarkContent': '5 000 ₽',
+        /* 'params': [
+          '42 м²',
+          '2 комнаты',
+          '1 спальня',
+          '1 кровать',
+          '2 гостя'
+        ], */
+        'prices': {
+          'За N суток': 11000,
+          'Предоплата': 131000
+        }
+      },
+      {
+        'coords': [
+          '55.930081194264',
+          '36.248514204023'
+        ],
+        'id': "123019",
+        'photo': 'img/jphnhkkcs1y0oj9k7oeq0znvaie6nuvz.jpg',
+        'link': '/catalog/rent/155070/',
+        'title': 'Коттедж Аппалачи с сауной в Коробицыно-Вилладж на -1 этаже 77 м2 ',
+        /* 'reviews': '500 отзывов', */
+        /* 'rating': '4.9', */
+        'placemarkContent': '3 000 ₽',
+
+        /* 'params': [
+          '42 м²',
+          '2 комнаты',
+          '1 спальня',
+          '1 кровать',
+          '2 гостя'
+        ], */
+        'prices': {
+          'За N суток': 11000,
+          'Предоплата': 131000
+        }
+      },
+    ];
+    ymaps.ready(function () {
+
+      var myMap = new ymaps.Map("shopsmap", {
+        center: marks[0].coords,
+        behaviors: ['default', 'scrollZoom'],
+        zoom: 8,
+        /*   controls: [], */
+        controls: ['geolocationControl'],
+      }, {
+        suppressMapOpenBlock: true
+      });
+
+      let clusterer = new ymaps.Clusterer({
+        preset: 'islands#invertedBlueClusterIcons',
+        groupByCoordinates: false,
+        clusterDisableClickZoom: true,
+        clusterHideIconOnBalloonOpen: false,
+        geoObjectHideIconOnBalloonOpen: false
+      });
+      let geoObjects = [];
+
+
+      var BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div class="customBaloon">' +
+        '<div class="customBaloon__wrapper">' +
+
+        '<div class="customBaloon__content">' +
+        `
+      <div class="customBaloon__obj">
+        <div class="customBaloon__objimg">
+         
+          <a href="{{properties.link}}"  target="_blank">
+            <img src="{{properties.photo}}" />
+          </a>
+        </div>
+        <div class="item_info se">
+          <div class="item_info--top_block">
+          
+            <div class="item-title">
+              <a href="{{properties.link}}"  target="_blank" class="dark_link js-notice-block__title option-font-bold font_sm"><span>{{properties.title}}</span></a>
+            </div>
+
+            
+            <div class="pricesv2">
+              <ul class="pricesv2__list">
+               {% for key, value in properties.prices %}
+                   <li>
+                      <span>{{key}}</span>
+                      <span>{{value}}</span>
+                    </li>
+                {% endfor %}
+              </ul>
+            </div><!-- /.pricesv2 -->
+            <div class="cardbuttonv2">
+              <a href="{{properties.link}}" target="_blank" class="btn btn-default has-ripple">Подробнее</a>
+            </div><!-- /.cardbuttonv2 -->
+          
+          </div>
+        </div>
+      ` +
+        '</div>' +
+
+
+        ' </div>' +
+        '</div>', {
+        build: function () {
+          BalloonContentLayout.superclass.build.call(this);
+        },
+        clear: function () {
+          BalloonContentLayout.superclass.clear.call(this);
+        },
+
+      });
+
+
+      var CustomPlacemarkLayout = ymaps.templateLayoutFactory.createClass(
+        '<div class="custom-placemark">' +
+        '{{properties.placemarkContent}}' +
+        '</div>'
+      );
+
+      marks.forEach(element => {
+        if (element.coords.length === 2) {
+          const baloonOptions = {
+            iconLayout: CustomPlacemarkLayout,
+            /*    iconImageHref: '/html/location-dot-solid.svg',
+               iconImageSize: [34, 58], */
+            iconImageOffset: [-50, -50],
+            iconShape: {
+              type: 'Rectangle',
+              // Прямоугольник описывается в виде двух точек - верхней левой и нижней правой.
+              coordinates: [
+                [-25, -25], [25, 25]
+              ]
+            },
+
+            balloonContentLayout: BalloonContentLayout,
+            hideIconOnBalloonOpen: false,
+            balloonPanelMaxMapArea: 'Infinity'
+          }
+
+          var myPlacemark = new ymaps.Placemark(element.coords, {
+            title: element.title,
+            photo: element.photo,
+            prices: element.prices,
+            rating: element.rating,
+            reviews: element.reviews,
+            params: element.params,
+            link: element.link,
+            placemarkContent: element.placemarkContent
+          }, baloonOptions);
+
+          placemarks[element.id] = myPlacemark
+
+
+          if (window.innerWidth > 1023) {
+
+            myPlacemark.options.set({ balloonPanelMaxMapArea: 0 })
+
+            myPlacemark.events.add('click', function (e) {
+              window.open(e.get('target').properties._data.link, '_blank');
+
+            });
+
+            myPlacemark.events
+              .add('mouseenter', function (e) {
+                myPlacemark.balloon.close();
+                e.get('target').options.set('iconImageHref', '/html/location-dot-solid2.svg');
+                e.get('target').balloon.open();
+                /* e.get('target').options.set('iconImageHref', '/html/location-dot-solid.svg'); */
+              })
+              .add('mouseleave', function (e) {
+                e.get('target').options.set('iconImageHref', '/html/location-dot-solid.svg');
+
+                /* e.get('target').options.set('iconImageHref', '/html/location-dot-solid.svg'); */
+              })
+          }
+
+          geoObjects.push(myPlacemark);
+        }
+      });
+
+      clusterer.options.set({
+        gridSize: 80,
+        clusterDisableClickZoom: true
+      });
+      clusterer.add(geoObjects);
+      myMap.events.add('click', function (e) {
+
+        myMap.balloon.close();
+
+      });
+      myMap.geoObjects.add(clusterer);
+      myMap.setBounds(clusterer.getBounds(), {
+        checkZoomRange: true
+      });
+
+
+
+      $(document).on('click', '.pagemap__list_toggler', function (e) {
+        $('.pagemap__content').toggleClass('unvisible')
+        /*  $('.pagemap__sidebar').toggleClass('nolist') */
+        $('.pagemap').toggleClass('nolist')
+        $(this).toggleClass('active')
+        myMap.container.fitToViewport();
+
+      });
+
+      $(document).on('mouseover', '.item_block', function (e) {
+        const id = $(this).data('id')
+        highlightPlacemark(id)
+      });
+      $(document).on('mouseleave', '.item_block', function (e) {
+        removeHighlight();
+      });
+
+
+      function highlightPlacemark(id) {
+        const placemark = placemarks[id];
+
+        if (placemark) {
+          placemark.options.set('iconImageHref', '/html/location-dot-solid2.svg');
+          placemark.balloon.open();
+        }
+      }
+
+      // Убираем выделение метки
+      function removeHighlight() {
+        for (id in placemarks) {
+          placemarks[id].options.set('iconImageHref', '/html/location-dot-solid.svg');
+          placemarks[id].balloon.close();
+        };
+      }
+
+    });
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      initCalendar();
+      const $btnsearch = $('.btn-search-main')
+      const $datein = $('#datein')
+      const $dateout = $('#dateout')
+      function isDatesSelected() {
+        return $('#datein').val().length && $('#dateout').val().length
+      }
+      function checkDatesSelected() {
+        if (isDatesSelected()) {
+          $btnsearch.removeClass('disabled')
+        } else {
+          $btnsearch.addClass('disabled')
+        }
+      };
+      checkDatesSelected();
+      $(document).on('click', '.mx-datepicker-main', function () {
+        console.log('check')
+        checkDatesSelected()
+      })
+
+      $('.btn-search-main').on("click", function () {
+        var dateinString = $('#datein').val();
+        var dateoutString = $('#dateout').val();
+        var adults = $('#adults').val();
+        var child = $('#child').val();
+        if (!isDatesSelected()) {
+          alert("Для поиска апартаментов необходимо выбрать даты заезда и отъезда!")
+          return
+        }
+
+        // Создаем объект Date из строки
+        var datein = new Date(dateinString);
+        var dateout = new Date(dateoutString);
+        // Получаем день, месяц и год
+        var day_in = datein.getDate();
+        var month_in = datein.getMonth() + 1; // Добавляем 1, так как нумерация месяцев начинается с 0
+        var year_in = datein.getFullYear();
+        // Формируем строку в нужном формате
+        var formattedDate_in = (day_in < 10 ? '0' : '') + day_in + '-' + (month_in < 10 ? '0' : '') + month_in + '-' + year_in;
+        // Получаем день, месяц и год
+        var day_out = dateout.getDate();
+        var month_out = dateout.getMonth() + 1; // Добавляем 1, так как нумерация месяцев начинается с 0
+        var year_out = dateout.getFullYear();
+        // Формируем строку в нужном формате
+        var formattedDate_out = (day_out < 10 ? '0' : '') + day_out + '-' + (month_out < 10 ? '0' : '') + month_out + '-' + year_out;
+
+        if (document.getElementById('23304df336f9f8a').checked) {
+          var pets = 'pit-is-da/';
+        } else {
+          var pets = '';
+        }
+        console.log(formattedDate_in);
+        console.log(formattedDate_out);
+        console.log(adults);
+        console.log(child);
+        console.log(pets);
+
+        if (adults == 2) {
+          var resaduls = 'is-2-or-3';
+        } else if (adults == 3) {
+          var resaduls = 'is-2-or-3';
+        } else if (adults == 4) {
+          var resaduls = 'is-2-or-3-or-4';
+        } else if (adults == 5) {
+          var resaduls = 'is-2-or-3-or-4-or-5';
+        } else if (adults == 6) {
+          var resaduls = 'is-2-or-3-or-4-or-5-or-6';
+        }
+        $('#preloader').show();
+        // Имитируем прогресс загрузки
+        /*var progress = 0;
+        var interval = setInterval(function() {
+            progress += 0.1;
+            $('.progress').css('width', progress + '%');
+            if (progress >= 100) {
+                clearInterval(interval);
+            }
+        }, 100);*/
+        let element = document.querySelector('input[type="hidden"]#idelem');
+        const pathname = window.location.pathname;
+        const url = window.location.pathname;
+        const containsApartments = url.includes("apartments");
+        const rents = url.includes("vse-obekty");
+        const kottedzhi = url.includes("kottedzhi");
+        let raz;
+        raz = 'rent';
+        if (containsApartments) {
+          raz = 'apartments';
+        } else if (kottedzhi) {
+          raz = 'kottedzhi';
+        } else if (rents) {
+          raz = 'rent';
+        }
+
+        if (element) {
+          // Если элемент существует, извлекаем URL без домена и параметров
+
+          window.location.href = pathname + '?datain=' + formattedDate_in + '&dataout=' + formattedDate_out + '&adults=' + adults + '&child=' + child + '&clear_cache=Y'
+        } else {
+
+          setTimeout(function () {
+            window.location.href = '/catalog/' + raz + '/filter/' + pets + 'include-' + resaduls + '/apply/' + '?datain=' + formattedDate_in + '&dataout=' + formattedDate_out + '&adults=' + adults + '&child=' + child + '&clear_cache=Y'
+          }, 2000);
+
+        }
+      });
+    });
+  </script>
+</body>
+<script src="js/hover-slider.min.js"></script>
+<script src="js/vue.js"></script>
+<script defer="defer" src="js/chunk-vendors.829b31ab.js"></script>
+<script defer="defer" src="js/app.2a9f8466.js"></script>
+
+</html>
